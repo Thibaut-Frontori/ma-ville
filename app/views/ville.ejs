@@ -1,0 +1,12 @@
+<%- include('partials/header') %>
+<h1>Liste des villes du département </h1>
+<p>Vous trouverez ci après la liste des villes dans ce département</p>
+<% for (const ville of listeDesvilles) { %>
+    <h2> <%= ville.label %> </h2>
+    
+    <% } %>
+
+
+
+
+<%- include('partials/footer') %>

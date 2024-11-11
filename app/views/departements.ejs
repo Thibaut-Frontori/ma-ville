@@ -1,0 +1,13 @@
+<%- include('partials/header') %>
+<h1>Liste des départements</h1>
+<p>Vous trouverez ci après la liste des départements</p>
+<% for (const dep of listeDep) { %>
+
+    <div>
+        <h2><%= dep.num_dep %> - <%= dep.dep_name %></h2>
+        <p>Voir les villes du département  <%= dep.dep_name %> :<a href="/departement/<%= dep.num_dep %>"><%= dep.dep_name %></a> </p> 
+        <p>Le département <%= dep.dep_name %> appartient à la région <%= dep.region_name %></p>
+    </div><%
+    }  %>
+
+<%- include('partials/footer') %>
